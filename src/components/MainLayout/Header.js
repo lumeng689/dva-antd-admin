@@ -15,12 +15,12 @@ function Header({ location }) {
       <Menu.Item key="/">
         <Link to="/"><Icon type="home" />Home</Link>
       </Menu.Item>
-      <Menu.item key="/404">
+      <Menu.Item key="/404">
         <Link to="/page-you-dont-know"><Icon type="frown-circle" />404</Link>
-      </Menu.item>
-      <Menu.item key="/antd">
+      </Menu.Item>
+      <Menu.Item key="/antd">
         <a href="https://github.com/dvajs/dva">dva</a>
-      </Menu.item>
+      </Menu.Item>
     </Menu>
   );
 }

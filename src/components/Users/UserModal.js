@@ -11,7 +11,7 @@ class UserEditModal extends Component {
     };
   }
 
-  showModelHandler(e) {
+  showModelHandler = (e) => {
     if (e) {
       e.stopPropagation();
     }
@@ -20,13 +20,13 @@ class UserEditModal extends Component {
     });
   }
 
-  hideModelHandler() {
+  hideModelHandler = () => {
     this.setState({
       visible: false,
     });
   }
 
-  okHandler() {
+  okHandler = () => {
     const { onOk } = this.props;
     this.props.form.validateFields((err, values) => {
       if (!err) {
@@ -47,7 +47,7 @@ class UserEditModal extends Component {
 
     return (
       <span>
-        <span onClick="this.showModelHandler">
+        <span onClick={this.showModelHandler}>
           {children}
         </span>
         <Modal

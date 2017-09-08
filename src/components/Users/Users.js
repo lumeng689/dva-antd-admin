@@ -40,7 +40,7 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
       title: 'Name',
       dataIndex: 'name',
       key: 'name',
-      render: text => <a href="">{{ text }}</a>,
+      render: text => <a href="">{text}</a>,
     },
     {
       title: 'Email',
