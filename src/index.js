@@ -14,13 +14,11 @@ const app = dva({
   },
 });
 
-app.model(require('./models/users'));
-
 // 2. Plugins
 app.use(createLoading());
 
 // 3. Model
-// app.model(require('./models/example'));
+// Moved to router.js
 
 // 4. Router
 app.router(require('./router'));
